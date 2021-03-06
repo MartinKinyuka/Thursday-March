@@ -1,43 +1,36 @@
-#pitch{ 
-  background-image: url(https://images-na.ssl-images-amazon.com/images/I/A1QA94rgGUL._SL1500_.jpg);
-  background-repeat: no-repeat;
-  height: 480px;
+*{
+  font-family: sans-serif;
+}
+body{
+  background-color: #508aa8;
+}
+body > h2{
+  text-align: center;
+  color: #faa916;
+}
+#first, #second{
+  display: flex;
+  justify-content: space-around;
+}
+#first > div, #second >div{
+  height: 200px;
   width: 20%;
-  background-size: 100% 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: auto;
-  font-family: sans-serif;
-  color: white;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 15px solid #FAA916;
+}
+#first > div:first-child:hover{
+  color: #faa916;
+  border-bottom: 15px solid black;
+
+}
+#second > div:first-child:hover{
+  color: #faa916;
+  border-bottom: 15px solid black;
+  text-shadow: none;
 }
 
-#defence{
-  height: 15%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#attack{
-  height: 15%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-#midfield{
-  height: 15%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#lineup{
-  font-family: sans-serif;
-  background-color: black;
-  color: white;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  right: 0;
+#second > div{
+  text-shadow: 5px 5px 1px #FAA916;
 }
